@@ -4,7 +4,7 @@ require_once 'classes/auth.php';
 
 // Require authentication for this page
 $currentUser = require_auth();
-print_r($currentUser);die;
+
 include 'htmls/header.php';
 ?>
 

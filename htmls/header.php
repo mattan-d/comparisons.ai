@@ -48,10 +48,14 @@
 
             <div class="nav-section">
                 <h3 class="nav-title">ניהול</h3>
+
+                <?php if(isset($currentUser) && $currentUser['role']) == 'admin'): ?>
                 <a href="management.php" class="nav-item admin-only">
                     <i class="fas fa-user-cog"></i>
                     <span>ניהול משתמשים</span>
                 </a>
+                <?php endif; ?>
+
                 <a href="profile.php" class="nav-item">
                     <i class="fas fa-user"></i>
                     <span>פרופיל</span>
