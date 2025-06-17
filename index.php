@@ -5,6 +5,9 @@ require_once 'classes/auth.php';
 // Require authentication for this page
 $currentUser = require_auth();
 
+echo "Shani";
+exit;
+
 include 'htmls/header.php';
 ?>
 
