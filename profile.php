@@ -148,41 +148,6 @@ include 'htmls/header.php';
             </form>
         </div>
 
-        <!-- WhatsApp Messages -->
-        <div class="profile-section">
-            <div class="section-header">
-                <h2>הודעות ווטסאפ</h2>
-                <p>הגדר הודעות אוטומטיות שיישלחו ללקוחות</p>
-            </div>
-
-            <form id="whatsapp-form">
-                <div class="form-group">
-                    <label class="form-label">הודעת נסיעה - הלוך</label>
-                    <textarea class="form-textarea" id="outbound-message" name="outbound_message" rows="4"
-                              placeholder="הכנס הודעה שתישלח ללקוח בתחילת הנסיעה..."></textarea>
-                    <div class="form-hint">הודעה זו תישלח אוטומטית ללקוח לפני הגעתך</div>
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label">הודעת נסיעה - חזור</label>
-                    <textarea class="form-textarea" id="return-message" name="return_message" rows="4"
-                              placeholder="הכנס הודעה שתישלח ללקוח בסיום הפגישה..."></textarea>
-                    <div class="form-hint">הודעה זו תישלח אוטומטית ללקוח לאחר סיום הפגישה</div>
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label">הודעת מעקב</label>
-                    <textarea class="form-textarea" id="followup-message" name="followup_message" rows="4"
-                              placeholder="הכנס הודעת מעקב..."></textarea>
-                    <div class="form-hint">הודעה זו תישלח כמעקב לאחר מספר ימים</div>
-                </div>
-
-                <div class="form-actions">
-                    <button type="submit" class="btn btn-primary" id="save-messages-btn">שמור הודעות</button>
-                    <button type="button" class="btn btn-outline" id="test-message">שלח הודעת בדיקה</button>
-                </div>
-            </form>
-        </div>
     </div>
 </div>
 
