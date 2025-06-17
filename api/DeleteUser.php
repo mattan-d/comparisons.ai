@@ -1,6 +1,7 @@
 <?php
 
-include __DIR__ . '/../classes/init.php';
+require_once __DIR__ . '/../classes/init.php';
+require_once __DIR__ . '/../classes/auth.php';
 
 // Require authentication for this page
 $currentUser = require_auth();
