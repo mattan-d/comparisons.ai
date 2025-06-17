@@ -184,7 +184,7 @@
         showLoadingState();
 
         try {
-          const response = await fetch('https://dev.comparisons/api/ClientsList.php', {
+          const response = await fetch('../..//api/ClientsList.php', {
             method: 'GET',
             headers: {
               'Content-Type': 'application/json',
@@ -385,7 +385,7 @@
 
       // Add new client
       async function addNewClient(clientData) {
-        const response = await fetch('https://dev.comparisons/api/AddClient.php', {
+        const response = await fetch('../..//api/AddClient.php', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -403,7 +403,7 @@
 
       // Update existing client (if you have an update API)
       async function updateClient(clientId, clientData) {
-        const response = await fetch(`https://dev.comparisons/api/UpdateClient.php`, {
+        const response = await fetch(`../..//api/UpdateClient.php`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -464,7 +464,7 @@
         deleteBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> מוחק...';
 
         try {
-          const response = await fetch('https://dev.comparisons/api/DeleteClient.php', {
+          const response = await fetch('../..//api/DeleteClient.php', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',

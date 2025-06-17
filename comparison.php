@@ -473,7 +473,7 @@ include __DIR__ . '/htmls/header.php';
           }, 500);
 
           // API endpoint - replace with your actual API URL
-          const apiUrl = 'https://dev.comparisons/api/comparisons.php';
+          const apiUrl = '../..//api/comparisons.php';
 
           const response = await fetch(apiUrl, {
             method: 'POST',
@@ -1305,7 +1305,7 @@ include __DIR__ . '/htmls/header.php';
         clientSelect.disabled = true;
 
         // Fetch clients from API
-        fetch('https://dev.comparisons/api/ClientsList.php').then(response => {
+        fetch('../..//api/ClientsList.php').then(response => {
           if (!response.ok) {
             throw new Error('Network response was not ok');
           }
@@ -1418,7 +1418,7 @@ include __DIR__ . '/htmls/header.php';
         }
 
         // Send data to API
-        fetch('https://dev.comparisons/api/AddClient.php', {
+        fetch('../..//api/AddClient.php', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

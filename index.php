@@ -157,7 +157,7 @@ include 'htmls/header.php';
 
   // Fetch user profile
   async function fetchUserProfile() {
-    const response = await fetch('https://dev.comparisons/api/UserProfile.php', {
+    const response = await fetch('../..//api/UserProfile.php', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -177,7 +177,7 @@ include 'htmls/header.php';
 
   // Fetch dashboard statistics
   async function fetchDashboardStats() {
-    const response = await fetch('https://dev.comparisons/api/DashboardStats.php', {
+    const response = await fetch('../..//api/DashboardStats.php', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -197,7 +197,7 @@ include 'htmls/header.php';
 
   // Fetch recent proposals
   async function fetchRecentProposals() {
-    const response = await fetch('https://dev.comparisons/api/RecentProposals.php', {
+    const response = await fetch('../..//api/RecentProposals.php', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -220,7 +220,7 @@ include 'htmls/header.php';
 
   // Fetch recent clients
   async function fetchRecentClients() {
-    const response = await fetch('https://dev.comparisons/api/RecentClients.php', {
+    const response = await fetch('../..//api/RecentClients.php', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

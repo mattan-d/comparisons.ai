@@ -235,7 +235,7 @@ include __DIR__ . '/htmls/header.php';
     showLoadingState();
 
     try {
-      const response = await fetch('https://dev.comparisons/api/UsersList.php', {
+      const response = await fetch('../..//api/UsersList.php', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -470,7 +470,7 @@ include __DIR__ . '/htmls/header.php';
 
   // Add new user
   async function addNewUser(userData) {
-    const response = await fetch('https://dev.comparisons/api/AddUser.php', {
+    const response = await fetch('../..//api/AddUser.php', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -488,7 +488,7 @@ include __DIR__ . '/htmls/header.php';
 
   // Update existing user
   async function updateUser(userData) {
-    const response = await fetch('https://dev.comparisons/api/UpdateUser.php', {
+    const response = await fetch('../..//api/UpdateUser.php', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -605,7 +605,7 @@ include __DIR__ . '/htmls/header.php';
     deleteBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> מוחק...';
 
     try {
-      const response = await fetch('https://dev.comparisons/api/DeleteUser.php', {
+      const response = await fetch('../..//api/DeleteUser.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

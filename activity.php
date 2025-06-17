@@ -212,7 +212,7 @@ include __DIR__ . '/htmls/header.php';
 
   // Fetch activities from API
   async function fetchActivities() {
-    const response = await fetch(`https://dev.comparisons/api/ActivityList.php?period=${currentDateFilter}`, {
+    const response = await fetch(`../..//api/ActivityList.php?period=${currentDateFilter}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -235,7 +235,7 @@ include __DIR__ . '/htmls/header.php';
 
   // Fetch activity statistics
   async function fetchActivityStats() {
-    const response = await fetch(`https://dev.comparisons/api/ActivityStats.php?period=${currentDateFilter}`, {
+    const response = await fetch(`../..//api/ActivityStats.php?period=${currentDateFilter}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -515,7 +515,7 @@ include __DIR__ . '/htmls/header.php';
   // View activity details
   async function viewActivityDetails(activityId) {
     try {
-      const response = await fetch(`https://dev.comparisons/api/ActivityDetails.php?id=${activityId}`, {
+      const response = await fetch(`../..//api/ActivityDetails.php?id=${activityId}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -788,7 +788,7 @@ include __DIR__ . '/htmls/header.php';
         notes: notesEdit ? notesEdit.value : null,
       };
 
-      const response = await fetch('https://dev.comparisons/api/UpdateActivity.php', {
+      const response = await fetch('../..//api/UpdateActivity.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -846,7 +846,7 @@ include __DIR__ . '/htmls/header.php';
 
   async function loadActivityLog(activityId) {
     try {
-      const response = await fetch(`https://dev.comparisons/api/ActivityLog.php?id=${activityId}`, {
+      const response = await fetch(`../..//api/ActivityLog.php?id=${activityId}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -1041,7 +1041,7 @@ include __DIR__ . '/htmls/header.php';
     deleteBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> מוחק...';
 
     try {
-      const response = await fetch('https://dev.comparisons/api/DeleteActivity.php', {
+      const response = await fetch('../..//api/DeleteActivity.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
