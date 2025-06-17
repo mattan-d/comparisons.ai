@@ -183,41 +183,6 @@ include 'htmls/header.php';
                 </div>
             </form>
         </div>
-
-        <!-- Message Templates -->
-        <div class="profile-section">
-            <div class="section-header">
-                <h2>תבניות הודעות</h2>
-                <p>תבניות מוכנות לשימוש מהיר</p>
-            </div>
-
-            <div class="templates-grid" id="templates-grid">
-                <!-- Templates will be loaded here -->
-            </div>
-        </div>
-
-        <!-- Statistics -->
-        <div class="profile-section">
-            <div class="section-header">
-                <h2>סטטיסטיקות אישיות</h2>
-            </div>
-
-            <div class="stats-grid" id="stats-grid">
-                <!-- Stats will be loaded here -->
-            </div>
-        </div>
-
-        <!-- Sessions -->
-        <div class="profile-section">
-            <div class="section-header">
-                <h2>התחברויות פעילות</h2>
-                <p>מכשירים ודפדפנים שמחוברים לחשבון שלך</p>
-            </div>
-
-            <div class="sessions-list" id="sessions-list">
-                <!-- Sessions will be loaded here -->
-            </div>
-        </div>
     </div>
 </div>
 
