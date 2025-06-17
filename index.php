@@ -1,7 +1,7 @@
 <?php
 require_once 'classes/init.php';
 require_once 'classes/auth.php';
-
+// Set the page title
 // Require authentication for this page
 $currentUser = require_auth();
 include 'htmls/header.php';
