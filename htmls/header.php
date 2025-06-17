@@ -109,10 +109,14 @@
                                 <i class="fas fa-user"></i>
                                 <span>פרופיל</span>
                             </a>
-                            <a href="management.php" class="account-dropdown-item admin-only">
-                                <i class="fas fa-cog"></i>
-                                <span>ניהול</span>
-                            </a>
+
+                            <?php if(isset($currentUser) && $currentUser['role'] == 'admin'): ?>
+                                <a href="management.php" class="account-dropdown-item admin-only">
+                                    <i class="fas fa-cog"></i>
+                                    <span>ניהול משתמשים</span>
+                                </a>
+                            <?php endif; ?>
+
                             <div class="dropdown-divider"></div>
                             <a href="#" class="account-dropdown-item logout-item" id="account-logout">
                                 <i class="fas fa-sign-out-alt"></i>

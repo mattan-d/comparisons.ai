@@ -1,4 +1,5 @@
 <?php
+$client = $_GET['client'];
 include __DIR__ . '/htmls/header.php';
 ?>
 
