@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>פלטפורמת השוואת ביטוחים</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="page-template">
+  <div class="overlay" id="overlay"></div>
+  <div class="app-container">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="logo-container">
+          <i class="fas fa-shield-alt logo-icon"></i>
+          <div class="logo-text">
+            <span class="logo-stream">ביטוח פלוס</span>
+            <span class="logo-university">פלטפורמת השוואות</span>
+          </div>
+        </div>
+        <button class="close-sidebar" id="close-sidebar">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      
+      <nav class="sidebar-nav">
+        <div class="nav-section">
+          <a href="dashboard.html" class="nav-item">
+            <i class="fas fa-th-large"></i>
+            <span>דשבורד</span>
+          </a>
+          <a href="clients.html" class="nav-item">
+            <i class="fas fa-users"></i>
+            <span>לקוחות</span>
+          </a>
+          <a href="activity.html" class="nav-item">
+            <i class="fas fa-chart-line"></i>
+            <span>פעילות</span>
+          </a>
+          <a href="comparison.html" class="nav-item">
+            <i class="fas fa-balance-scale"></i>
+            <span>השוואת פוליסות</span>
+          </a>
+        </div>
+        
+        <div class="nav-section">
+          <h3 class="nav-title">ניהול</h3>
+          <a href="management.html" class="nav-item admin-only">
+            <i class="fas fa-user-cog"></i>
+            <span>ניהול משתמשים</span>
+          </a>
+          <a href="profile.html" class="nav-item">
+            <i class="fas fa-user"></i>
+            <span>פרופיל</span>
+          </a>
+        </div>
+        
+        <div class="nav-section">
+          <h3 class="nav-title">חשבון</h3>
+          <a href="#" class="nav-item logout-link" id="sidebar-logout">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>התנתקות</span>
+          </a>
+        </div>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="main-header">
+        <button class="menu-toggle" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="search-container">
+          <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="חיפוש לקוחות או פוליסות...">
+          </div>
+        </div>
+        <div class="header-actions">
+          <button class="icon-button notification-button">
+            <i class="fas fa-bell"></i>
+            <span class="notification-badge">3</span>
+          </button>
+          <a href="comparison.html" class="button primary-button">
+            <i class="fas fa-plus"></i>
+            <span>השוואה חדשה</span>
+          </a>
+          <div class="user-menu-container">
+            <input type="checkbox" id="user-menu-toggle" class="user-menu-toggle">
+            <label for="user-menu-toggle" class="user-menu-toggle-label">
+              <div class="user-avatar" tabindex="0">א.כ</div>
+            </label>
+            <label for="user-menu-toggle" class="menu-overlay"></label>
+            <div class="account-dropdown">
+              <div class="account-dropdown-header">
+                <div class="dropdown-user-avatar">א.כ</div>
+                <div class="dropdown-user-info">
+                  <div class="dropdown-user-name">אבי כהן</div>
+                  <div class="dropdown-user-email">avi.cohen@insurance.co.il</div>
+                </div>
+              </div>
+              <div class="account-dropdown-items">
+                <a href="profile.html" class="account-dropdown-item">
+                  <i class="fas fa-user"></i>
+                  <span>פרופיל</span>
+                </a>
+                <a href="management.html" class="account-dropdown-item admin-only">
+                  <i class="fas fa-cog"></i>
+                  <span>ניהול</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="account-dropdown-item logout-item" id="account-logout">
+                  <i class="fas fa-sign-out-alt"></i>
+                  <span>התנתקות</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="content-area">
+        <!-- Page content goes here -->
+        <div class="page-content">
+          <h1>כותרת הדף</h1>
+          <p>זהו דף תבנית. החלף תוכן זה בתוכן הדף בפועל.</p>
+        </div>
+      </div>
+      
+      <!-- Footer -->
+      <footer class="main-footer">
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3 class="footer-title">ביטוח פלוס</h3>
+            <p class="footer-description">
+              הפלטפורמה המובילה להשוואת פוליסות ביטוח
+            </p>
+          </div>
+          
+          <div class="footer-section">
+            <h4 class="footer-heading">משאבים</h4>
+            <ul class="footer-links">
+              <li><a href="#">מרכז עזרה</a></li>
+              <li><a href="#">מדריכים</a></li>
+              <li><a href="#">תמיכה טכנית</a></li>
+              <li><a href="#">API למפתחים</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h4 class="footer-heading">החברה</h4>
+            <ul class="footer-links">
+              <li><a href="#">אודות</a></li>
+              <li><a href="#">קריירה</a></li>
+              <li><a href="#">צור קשר</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h4 class="footer-heading">משפטי</h4>
+            <ul class="footer-links">
+              <li><a href="#">תנאי שימוש</a></li>
+              <li><a href="#">מדיניות פרטיות</a></li>
+              <li><a href="#">זכויות יוצרים</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2024 ביטוח פלוס. כל הזכויות שמורות.</p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
