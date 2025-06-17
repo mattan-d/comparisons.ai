@@ -1,4 +1,10 @@
 <?php
+require_once 'classes/init.php';
+require_once 'classes/auth.php';
+
+// Require authentication for this page
+$currentUser = require_auth();
+
 
 $header_action='<button class="button primary-button" id="add-user-btn">
                     <i class="fas fa-user-plus"></i>
