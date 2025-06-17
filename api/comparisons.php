@@ -54,7 +54,7 @@ $apiKey =
         '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';
 $assistantId = 'asst_7pmFErNVyM76Lqf0qYnX4TCb';
 $responseMessage = '';
-// Start the conversation
+
 // 1. Create a thread
 $thread = apiRequest('https://api.openai.com/v1/threads', $apiKey, []);
 if (!$thread || !isset($thread['id'])) {
