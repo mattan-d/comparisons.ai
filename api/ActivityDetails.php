@@ -1,5 +1,6 @@
 <?php
 
+// Include the init file
 include __DIR__ . '/../classes/init.php';
 
 // Get the raw POST body
