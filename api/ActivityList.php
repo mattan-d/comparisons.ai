@@ -38,7 +38,7 @@ foreach ($comparisons as $comparison) {
     foreach ($companies as $company) {
         $companies_compared[] = $company['name'];
     }
-//
+
     $comparison['destination'] = $details['destinationName'];
     $comparison['departure_date'] = $details['departureDate'];
     $comparison['return_date'] = $details['returnDate'];
