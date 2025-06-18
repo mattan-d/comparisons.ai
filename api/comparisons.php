@@ -55,7 +55,7 @@ if ($data !== null) {
 //echo json_encode(['success' => true]);
 // Replace with your OpenAI API Key and Assistant ID
 $apiKey =
-        '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';
+        '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';
 $assistantId = 'asst_7pmFErNVyM76Lqf0qYnX4TCb';
 $responseMessage = '';
 
