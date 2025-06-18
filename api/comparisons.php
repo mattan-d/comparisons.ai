@@ -54,8 +54,16 @@ if ($data !== null) {
 }
 //echo json_encode(['success' => true]);
 // Replace with your OpenAI API Key and Assistant ID
-$apiKey =
-        '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';
+
+$apiKeyPath = '/etc/hook/api.key';
+
+if (file_exists($apiKeyPath)) {
+    $apiKey = trim(file_get_contents($apiKeyPath));
+} else {
+    // Handle the error appropriately
+    throw new Exception("API key file not found at $apiKeyPath");
+}
+
 $assistantId = 'asst_7pmFErNVyM76Lqf0qYnX4TCb';
 $responseMessage = '';
 
