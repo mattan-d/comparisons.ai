@@ -6,6 +6,8 @@ require_once __DIR__ . '/../classes/auth.php';
 // Require authentication for this page
 $currentUser = require_auth();
 
+print_r($currentUser);
+
 $comparisons = $DB->store('comparisons')
         ->where('user_id', '=', $currentUser['id'])
         ->orderBy('DESC', 'id')
