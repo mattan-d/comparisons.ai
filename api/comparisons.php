@@ -55,7 +55,7 @@ if ($data !== null) {
 
 // Replace with your OpenAI API Key and Assistant ID
 $apiKey =
-        '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';
+        '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';
 $assistantId = 'asst_7pmFErNVyM76Lqf0qYnX4TCb';
 $responseMessage = '';
 
