@@ -52,7 +52,7 @@ if ($data !== null) {
                 ->insert($companies);
     }
 }
-//echo json_encode(['success' => true]);
+
 // Replace with your OpenAI API Key and Assistant ID
 
 $apiKeyPath = '/etc/hook/api.key';
