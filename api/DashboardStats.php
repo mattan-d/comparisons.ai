@@ -10,6 +10,11 @@ $comparisons = $DB->store('comparisons')
         ->where('user_id', '=', $currentUser['id'])
         ->fetch();
 
+$dealsclosed = $DB->store('comparisons')
+        ->where('user_id', '=', $currentUser['id'])
+        ->where('status', '=', 'approved')
+        ->fetch();
+
 $clients = $DB->store('clients')
         ->where('user_id', '=', $currentUser['id'])
         ->fetch();
@@ -21,7 +26,7 @@ $response['clients_change_value'] = 0;
 $response['comparisons_this_month'] = count($comparisons);
 $response['comparisons_change'] = '+0 מהשבוע הקודם';
 $response['comparisons_change_value'] = 0;
-$response['deals_closed'] = 0;
+$response['deals_closed'] = count($dealsclosed);
 $response['deals_change'] = '+0 מהשבוע הקודם';
 $response['deals_change_value'] = 0;
 $response['total_savings'] = 0;
