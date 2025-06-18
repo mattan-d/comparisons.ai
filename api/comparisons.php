@@ -5,7 +5,7 @@ require_once __DIR__ . '/../classes/auth.php';
 
 // Require authentication for this page
 $currentUser = require_auth();
-print_r($currentUser);die;
+
 // Get the raw POST body
 $payload = file_get_contents('php://input');
 
