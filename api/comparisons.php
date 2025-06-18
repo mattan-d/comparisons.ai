@@ -52,7 +52,7 @@ if ($data !== null) {
                 ->insert($companies);
     }
 }
-
+//echo json_encode(['success' => true]);
 // Replace with your OpenAI API Key and Assistant ID
 $apiKey =
         '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';
