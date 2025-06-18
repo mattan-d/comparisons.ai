@@ -126,8 +126,7 @@ function apiRequest($url, $apiKey, $data = null, $method = 'POST') {
 
     $response = curl_exec($ch);
     curl_close($ch);
-    print_r($response);
-    die;
+
     return json_decode($response, true);
 }
 
