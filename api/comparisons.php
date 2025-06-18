@@ -55,7 +55,7 @@ if ($data !== null) {
 
 // Replace with your OpenAI API Key and Assistant ID
 $apiKey =
-        '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';
+        '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';
 $assistantId = 'asst_7pmFErNVyM76Lqf0qYnX4TCb';
 $responseMessage = '';
 
@@ -126,7 +126,8 @@ function apiRequest($url, $apiKey, $data = null, $method = 'POST') {
 
     $response = curl_exec($ch);
     curl_close($ch);
-print_r($response);die;
+    print_r($response);
+    die;
     return json_decode($response, true);
 }
 
