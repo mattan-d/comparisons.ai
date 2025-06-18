@@ -1,6 +1,10 @@
 <?php
 
-include __DIR__ . '/../classes/init.php';
+require_once __DIR__ . '/../classes/init.php';
+require_once __DIR__ . '/../classes/auth.php';
+
+// Require authentication for this page
+$currentUser = require_auth();
 
 // Get the raw POST body
 $payload = file_get_contents('php://input');
@@ -12,7 +16,7 @@ if ($data !== null) {
 
     $comparison_id = $DB->store('comparisons')
             ->insert([
-                    'user_id' => 1,
+                    'user_id' => $currentUser['id'],
                     'client_id' => $data['client']['id'],
                     'prompt' => json_encode($data['prompt']),
                     'status' => 'pending',
